@@ -1,0 +1,8 @@
+*.lock
+*.tgz
+*.bak
+.idea/
+
+#Dependency Charts tar file
+**/charts/*.tgz
+shared/Chart.lock

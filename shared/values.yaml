@@ -1,0 +1,27 @@
+redis:
+  enabled: true
+  password: password123
+  cluster:
+    enabled: false
+  master:
+    disableCommands: []
+kafka:
+  enabled: true
+  externalAccess:
+    enabled: true
+    service:
+      type: LoadBalancer
+      domain: localhost
+      port: 9094
+    autoDiscovery:
+      enabled: true
+  serviceAccount:
+    create: true
+  rbac:
+    create: true
+mongodb:
+  enabled: true
+  auth:
+    rootPassword: password123
+    username: dukevu
+    password: password123
