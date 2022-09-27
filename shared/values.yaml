@@ -19,9 +19,17 @@ kafka:
     create: true
   rbac:
     create: true
+#Todo: update to their credential
 mongodb:
   enabled: true
+  externalAccess:
+    enabled: true
+    service:
+      type: LoadBalancer
+      domain: localhost
+      port: 27017
   auth:
     rootPassword: password123
-    username: dukevu
-    password: password123
+    databases: [test]
+    usernames: [dukevu]
+    passwords: [password123]
